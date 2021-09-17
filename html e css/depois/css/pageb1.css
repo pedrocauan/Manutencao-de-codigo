@@ -1,113 +1,142 @@
-body{
-    background-color: rgba(64, 221, 221, 0.527);
+html {
+  box-sizing: border-box;
 }
 
-
-h1{
-    word-spacing: 20px;
-    font-size: 120px;
-    margin-top: 20px;
-    color: rgb(30, 89, 144);
-    text-align: center;
-    font-family: 'Allison', cursive;
+body {
+  background-color: rgba(64, 221, 221, 0.527);
+  font-family: 'Alison';
 }
 
-#veja{
-    font-size: 40px;
+h1 {
+  word-spacing: 20px;
+  font-size: 90px;
+  margin-top: 20px;
+  color: rgb(30, 89, 144);
+  text-align: center;
+  font-family: 'Allison', cursive;
 }
 
-#fotospag2{
-    padding: 0;
-    margin: 0;
-    font-size: 75px;
-    text-align: center;
+#veja {
+  font-size: 40px;
 }
 
-.total{
-    padding: 30px;
-    text-align: center;
-    margin: auto;
-    overflow: hidden;
+#fotospag2 {
+  padding: 0;
+  margin: 0;
+  font-size: 75px;
+  text-align: center;
 }
 
-.header{
-    border: 5px solid aqua;
-    font-family: 'Allison', cursive;
-    font-size: 90px;
-    border-radius: 17px;
-    width: 60%;
-    background-color: rgba(47, 104, 151, 0.287);
-    margin: auto;
-    overflow: hidden;
+.total {
+  padding: 30px;
+  text-align: center;
+  margin: auto;
+  overflow: hidden;
+  /* Definindo tamanho maximo de tela*/
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
 }
 
-
-.logo{
-    margin: 0;
-    padding: 0;
-    float: left;
-
+/*Criando uma grid para alinhar as imagens*/
+.imagens {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 10px;
 }
 
-.menu{
-    margin: 0;
-    padding: 0;
-    float: right;
-    list-style-type: none;
+.imagens img {
+  width: 100%;
+  height: 300px;
 }
 
-a{
-    text-decoration-line: none;
-    color: black;
+.header {
+  border: 5px solid aqua;
+  font-family: 'Allison', cursive;
+  font-size: 45px;
+  border-radius: 17px;
+  width: 90%;
+  /*MAX-WIDTH define o tamanho maximo que um elemento vai ter, no caso neste exemplo vamos colocar 1200px de tela*/
+  max-width: 1200px;
+  background-color: rgba(47, 104, 151, 0.287);
+  margin: auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-
-.ft2{
-    border: 5px solid rgb(0, 0, 0);
-    text-align: center;
+.logo {
+  margin: 0;
+  padding: 16px;
+  float: left;
+  font-size: 40px;
 }
 
-.ft3{
-    width: 625px;
-    height: 454px;
+.menu {
+  margin: 0;
+  padding: 0;
+  float: right;
+  list-style-type: none;
 }
 
-.ft4{
-    border: 5px solid black;
-    width: 700px;
-    height: 465px;
+.alinhar {
+  width: 100%;
+  max-width: 1200px;
 }
 
-
-.rodape{
-    overflow: hidden;
-    margin: auto;
-    margin-top: 70px;
-    border: 5px solid aqua;
-    font-size: 27px;
-    width: 80%;
-    background-color: rgba(74, 74, 161, 0.349);
-    border-radius: 20px;
-    list-style-type: none;
+a {
+  text-decoration-line: none;
+  color: black;
+}
+/* 
+parte desnecessária de código que foi corrigida utilizando a grid
+.ft2 {
+  border: 5px solid rgb(0, 0, 0);
+  text-align: center;
 }
 
-.lista2{
-    text-align: center;
-    overflow: hidden;
-    float: left;
-    
+.ft3 {
+  width: 625px;
+  height: 454px;
 }
 
-li{
-    display: block;
-    float: left;
-    margin: 20px;
+.ft4 {
+  border: 5px solid black;
+  width: 700px;
+  height: 465px;
+}
+*/
+.rodape {
+  overflow: hidden;
+  margin: auto;
+  margin-top: 70px;
+  border: 5px solid aqua;
+  width: 100%;
+  max-width: 1200px;
+  background-color: rgba(74, 74, 161, 0.349);
+  border-radius: 20px;
+  list-style-type: none;
 }
 
+/* Diminuindo o tamanho da fonte do rodapé*/
+.rodape li {
+  font-size: 24px;
+}
 
+.lista2 {
+  text-align: center;
+  overflow: hidden;
+  float: left;
+}
 
-
-
-
-
-
+li {
+  display: block;
+  float: left;
+  /* Definir um padding é bem melhor do que definir a margem, ele ira crescer para dentro e nao para fora*/
+  padding: 16px;
+  font-size: 40px;
+}
