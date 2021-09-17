@@ -1,0 +1,113 @@
+body{
+    background-color: rgba(64, 221, 221, 0.527);
+}
+
+
+h1{
+    word-spacing: 20px;
+    font-size: 120px;
+    margin-top: 20px;
+    color: rgb(30, 89, 144);
+    text-align: center;
+    font-family: 'Allison', cursive;
+}
+
+#veja{
+    font-size: 40px;
+}
+
+#fotospag2{
+    padding: 0;
+    margin: 0;
+    font-size: 75px;
+    text-align: center;
+}
+
+.total{
+    padding: 30px;
+    text-align: center;
+    margin: auto;
+    overflow: hidden;
+}
+
+.header{
+    border: 5px solid aqua;
+    font-family: 'Allison', cursive;
+    font-size: 90px;
+    border-radius: 17px;
+    width: 60%;
+    background-color: rgba(47, 104, 151, 0.287);
+    margin: auto;
+    overflow: hidden;
+}
+
+
+.logo{
+    margin: 0;
+    padding: 0;
+    float: left;
+
+}
+
+.menu{
+    margin: 0;
+    padding: 0;
+    float: right;
+    list-style-type: none;
+}
+
+a{
+    text-decoration-line: none;
+    color: black;
+}
+
+
+.ft2{
+    border: 5px solid rgb(0, 0, 0);
+    text-align: center;
+}
+
+.ft3{
+    width: 625px;
+    height: 454px;
+}
+
+.ft4{
+    border: 5px solid black;
+    width: 700px;
+    height: 465px;
+}
+
+
+.rodape{
+    overflow: hidden;
+    margin: auto;
+    margin-top: 70px;
+    border: 5px solid aqua;
+    font-size: 27px;
+    width: 80%;
+    background-color: rgba(74, 74, 161, 0.349);
+    border-radius: 20px;
+    list-style-type: none;
+}
+
+.lista2{
+    text-align: center;
+    overflow: hidden;
+    float: left;
+    
+}
+
+li{
+    display: block;
+    float: left;
+    margin: 20px;
+}
+
+
+
+
+
+
+
+
