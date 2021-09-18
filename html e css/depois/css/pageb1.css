@@ -35,17 +35,18 @@ h1 {
   /* Definindo tamanho maximo de tela*/
   width: 100%;
   max-width: 1200px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
   padding: 20px;
 }
 
 /*Criando uma grid para alinhar as imagens*/
 .imagens {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 10px; /* ESPAÇO ENTRE AS IMAGENS*/
+  align-content: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
 }
 
 .imagens img {
@@ -83,11 +84,6 @@ h1 {
   list-style-type: none;
 }
 
-.alinhar {
-  width: 100%;
-  max-width: 1200px;
-}
-
 a {
   text-decoration-line: none;
   color: black;
@@ -115,7 +111,7 @@ parte desnecessária de código que foi corrigida utilizando a grid
   margin: auto;
   margin-top: 70px;
   border: 5px solid aqua;
-  width: 100%;
+  width: 90%;
   max-width: 1200px;
   background-color: rgba(74, 74, 161, 0.349);
   border-radius: 20px;
